@@ -4,6 +4,10 @@
 isTallEnough(72); //true
 isTallEnough(28); //false
 
+function isTallEnough(numberininch){
+    if(numberininch>=72){return true};
+    return false;
+}
 
 //2- Write a function isGoodFreethrowShooter that takes a shooting percentage
 // (a number you can assume will be between 0 and 1 -- exclusive of 1).
@@ -16,6 +20,12 @@ isTallEnough(28); //false
 //and 0.80 is considered a "Great freethrow shooter" (not "Decent freethrow shooter"). 
 //Additionally, you can get a number as high as 0.99, but never 1 
 //(this is what the original problem statement means by "exclusive of 1").
+
+function isGoodFreethrowShooter (shotingpercintage){
+    if(shotingpercintage>=0 && shotingpercintage < 0.65){return "Horrible freethrow shooter"}
+    if(shotingpercintage>=0.65 && shotingpercintage < 0.80){return "Decent freethrow shooter"}
+    if(shotingpercintage>=0.8 && shotingpercintage < 1.00){return "Great freethrow shooter"}
+}
 
 // Calling your function should result in:
 
